@@ -16,7 +16,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 
-import { IoCloud, IoLogoDiscord, IoLogoJavascript, IoLogoPython, IoFlask, IoFlaskOutline, IoFlaskSharp } from 'react-icons/io5'
+import { IoCloud, IoLogoDiscord, IoLogoJavascript, IoLogoPython } from 'react-icons/io5'
 import { TbApi } from 'react-icons/tb'
 import { PiLinkBold } from 'react-icons/pi'
 import AnimatedSection from '../components/animatedsection.js'
