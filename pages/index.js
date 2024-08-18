@@ -64,18 +64,15 @@ const Page = () => {
                                 </Heading>
                                 <Text transition="color 0.3s ease">
                                     <br />
-                                    I&apos;m Anurag Kar, a computer science student at NYIT&apos;s Manhattan campus. I&apos;m seeking opportunities for skill development, continuous learning, and practical application in relevant projects to help me become a more capable developer.
+                                    I&apos;m Anurag Kar, a backend-focused developer specalizing in Python and Python frameworks.
                                     <br />
                                     <br />
                                     <Link
-                                        href="/projects"
-                                        color={useColorModeValue(
-                                            '#2ebeec',
-                                            '#86e1fe'
-                                        )}
+                                        href="mailto:anuragkar970@gmail.com"
+                                        color={useColorModeValue('#2ebeec', '#86e1fe')}
                                         transition="color 0.3s ease"
                                     >
-                                        Take a look at some of my projects here
+                                        Looking to hire me? Email me at anuragkar970@gmail.com
                                     </Link>
                                 </Text>
                             </Box>
