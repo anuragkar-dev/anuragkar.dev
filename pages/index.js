@@ -188,7 +188,7 @@ const Page = () => {
                                         )}
                                         whiteSpace="nowrap"
                                     >
-                                        Feb 2023 – Present
+                                        April 2024 – May 2024
                                     </Text>
                                 </GridItem>
                                 <GridItem>
