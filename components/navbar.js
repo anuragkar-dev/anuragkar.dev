@@ -20,7 +20,8 @@ import {
     IoLogoGithub,
     IoLogoLinkedin,
     IoCodeSlash,
-    IoHome
+    IoHome,
+    IoNewspaper
 } from 'react-icons/io5'
 import styled from '@emotion/styled'
 
@@ -106,6 +107,19 @@ const Navbar = props => {
                     </StyledLogo>
                     <StyledLogo>
                         <LinkItem
+                            href="/Anurag_Kar_resume.pdf"
+                            path={path}
+                            display="inline-flex"
+                            alignItems="center"
+                            style={{ gap: 4, textDecoration: 'none' }}
+                            pl={2}
+                        >
+                            <IoNewspaper />
+                            Resume
+                        </LinkItem>
+                    </StyledLogo>
+                    <StyledLogo>
+                        <LinkItem
                             target="_blank"
                             href="https://github.com/anuragcar"
                             path={path}
@@ -171,6 +185,7 @@ const Navbar = props => {
                                         </span>
                                     </MenuItem>
                                 </NextLink>
+
                                 <NextLink href="/projects" passHref>
                                     <MenuItem
                                         as={Link}
@@ -182,6 +197,21 @@ const Navbar = props => {
                                         <IoCodeSlash />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             Projects
+                                        </span>
+                                    </MenuItem>
+                                </NextLink>
+
+                                <NextLink href="/Anurag_Kar_resume.pdf" passHref>
+                                    <MenuItem
+                                        as={Link}
+                                        style={{
+                                            gap: 4,
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <IoNewspaper />
+                                        <span style={{ marginLeft: '0.5rem' }}>
+                                            Resume
                                         </span>
                                     </MenuItem>
                                 </NextLink>
