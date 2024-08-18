@@ -64,7 +64,7 @@ const Page = () => {
                                 </Heading>
                                 <Text transition="color 0.3s ease">
                                     <br />
-                                    I&apos;m Anurag Kar, a computer science student at NYIT's Manhattan campus. I&apos;m seeking opportunities for skill development, continuous learning, and practical application in relevant projects to help me become a more capable developer.
+                                    I&apos;m Anurag Kar, a computer science student at NYIT&apos;s Manhattan campus. I&apos;m seeking opportunities for skill development, continuous learning, and practical application in relevant projects to help me become a more capable developer.
                                     <br />
                                     <br />
                                     <Link
