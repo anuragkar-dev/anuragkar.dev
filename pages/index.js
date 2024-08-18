@@ -40,7 +40,7 @@ const Page = () => {
                     sequence={[
                         500,
                         "Hi, I'm Anurag!",
-                        1000,
+                        1500,
                         'Welcome to my website!'
                     ]}
                     speed={50}
