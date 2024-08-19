@@ -233,6 +233,24 @@ const Navbar = props => {
                                         </span>
                                     </MenuItem>
                                 </NextLink>
+
+                                <NextLink
+                                    href="https://linkedin.com/in/anuragcar"
+                                    passHref
+                                >
+                                    <MenuItem
+                                        as={Link}
+                                        style={{
+                                            gap: 4,
+                                            textDecoration: 'none'
+                                        }}
+                                    >
+                                        <IoLogoLinkedin />
+                                        <span style={{ marginLeft: '0.5rem' }}>
+                                            LinkedIn
+                                        </span>
+                                    </MenuItem>
+                                </NextLink>
                             </MenuList>
                         </Menu>
                     </Box>

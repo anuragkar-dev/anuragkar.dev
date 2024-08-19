@@ -206,7 +206,7 @@ const Page = () => {
                         </VStack>
                     </Section>
                 </AnimatedSection>
-                <AnimatedSection index={1}>
+                <AnimatedSection index={3}>
                     <Section>
                         <Heading
                             as="h3"
