@@ -67,12 +67,13 @@ const Page = () => {
                                     I&apos;m Anurag Kar, a backend-focused developer specalizing in Python and Python frameworks.
                                     <br />
                                     <br />
+                                    <strong>Looking to hire me? </strong> 
                                     <Link
                                         href="mailto:anuragkar970@gmail.com"
                                         color={useColorModeValue('#2ebeec', '#86e1fe')}
                                         transition="color 0.3s ease"
                                     >
-                                        Looking to hire me? Email me at anuragkar970@gmail.com
+                                    Email me at anuragkar970@gmail.com
                                     </Link>
                                 </Text>
                             </Box>
