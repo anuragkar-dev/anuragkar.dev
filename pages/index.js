@@ -58,7 +58,7 @@ const Page = () => {
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 1.25, ease: "easeOut" }}
+                    transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                     <Heading fontSize="3xl">anuragkar.dev</Heading>
                 </motion.div>

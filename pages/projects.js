@@ -4,10 +4,9 @@ import {
     SimpleGrid,
     Divider,
     Box,
-    Link
+    Link,
+    useColorModeValue
 } from '@chakra-ui/react'
-// import Layout from '../components/layouts/main'
-// import Section from '../components/section'
 import { Carousel } from '../components/carousel'
 import { SwiperSlide } from 'swiper/react'
 
@@ -25,20 +24,8 @@ import dynamic from 'next/dynamic';
 const VideoPlayer = dynamic(() => import('../components/videoplayer'), { ssr: false });
 
 const Projects = () => {
-    // const [currentBlurb, setCurrentBlurb] = useState('')
-    // const blurbs = [
-    //     'Telemetry data visualization for F1 races.',
-    //     'Position changes during the race.',
-    //     'Track dominance analysis.',
-    //     'Head-to-head comparisons.',
-    //     'Qualifying gap analysis.',
-    //     'Constructor Championship standings.',
-    //     'Driver Championship standings.'
-    // ]
-
-    // const handleSlideChange = swiper => {
-    //     setCurrentBlurb(blurbs[swiper.activeIndex])
-    // }
+    const gradientColors = 'linear(to-r, blue.400, purple.500)';
+    const textColor = useColorModeValue('gray.800', 'white');
 
     return (
         <Box as="main" pb={8}>
@@ -67,9 +54,24 @@ const Projects = () => {
                                         alignItems="center"
                                         style={{ gap: 10 }}
                                         pl={2}
+                                        color="white"
+                                        _hover={{
+                                            textDecoration: 'none' // No underline on hover
+                                        }}
                                     >
                                         <PiLinkBold />
-                                        F1 Buddy
+                                        <Box
+                                            as="span"
+                                            color="inherit"
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                color: 'transparent',
+                                                transition: 'color 0.3s ease' // Add transition
+                                            }}
+                                        >
+                                            F1 Buddy
+                                        </Box>
                                         <IoLogoPython />
                                         <IoLogoDiscord />
                                         <TbApi />
@@ -117,9 +119,24 @@ const Projects = () => {
                                         alignItems="center"
                                         style={{ gap: 10 }}
                                         pl={2}
+                                        color="white"
+                                        _hover={{
+                                            textDecoration: 'none' // No underline on hover
+                                        }}
                                     >
                                         <PiLinkBold />
-                                        WanderSync
+                                        <Box
+                                            as="span"
+                                            color="inherit"
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                color: 'transparent',
+                                                transition: 'color 0.3s ease' // Add transition
+                                            }}
+                                        >
+                                            WanderSync
+                                        </Box>
                                         <IoLogoPython />
                                         <IoLogoJavascript />
                                         <TbApi />
