@@ -63,7 +63,7 @@ const Page = () => {
                 borderRadius="10px"
                 bgGradient={gradientColors}
                 bgSize="200% 200%"
-                animation="lavaLampEffect 8s ease infinite"
+                animation="lavaLampEffect 7.5s ease infinite"
                 p={6}
                 mb={3}
                 textAlign="center"
@@ -311,7 +311,7 @@ const Page = () => {
                                             alignItems="center"      // Align items vertically
                                         >
                                             <PiLinkBold color={useColorModeValue('black', 'white')} />
-                                            <Text ml={2}>F1Buddy</Text>
+                                            <Text ml={2}>F1 Buddy</Text>
                                         </Link>
                                     </GridItem>
                                 </Grid>
