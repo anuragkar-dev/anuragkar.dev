@@ -34,7 +34,6 @@ const fadeInUp = {
 
 const Page = () => {
     const gradientColors = 'linear(to-r, blue.400, purple.500)'; // Keeping your gradient colors
-    const textColor = useColorModeValue('black', 'white');
 
     return (
         <Container>
