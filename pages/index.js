@@ -67,7 +67,7 @@ const Page = () => {
                 p={6}
                 mb={3}
                 textAlign="center"
-                color={useColorModeValue('black', 'white')}
+                color={useColorModeValue('white', 'white')}
                 fontWeight="normal"
                 boxShadow="none"
             >
@@ -119,7 +119,7 @@ const Page = () => {
                                             transition="color 0.3s ease"
                                             _hover={{
                                                 textDecoration: 'underline',
-                                                filter: 'brightness(1.2)',
+                                                filter: 'brightness(1.25)',
                                             }}
                                         >
                                             Email me at anuragkar970@gmail.com
@@ -166,7 +166,7 @@ const Page = () => {
                                 transition="color 0.3s ease"
                                 _hover={{
                                     textDecoration: 'underline',
-                                    filter: 'brightness(1.2)',
+                                    filter: 'brightness(1.25)',
                                 }}
                             >
                                 View my full resume here
