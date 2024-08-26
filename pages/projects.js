@@ -25,7 +25,8 @@ const VideoPlayer = dynamic(() => import('../components/videoplayer'), { ssr: fa
 
 const Projects = () => {
     const gradientColors = 'linear(to-r, blue.400, purple.500)';
-    const textColor = useColorModeValue('gray.800', 'white');
+    const textColor = useColorModeValue('black', 'white');
+    const logoColor = useColorModeValue('black', 'white'); // Adjusted for light mode
 
     return (
         <Box as="main" pb={8}>
@@ -54,28 +55,30 @@ const Projects = () => {
                                         alignItems="center"
                                         style={{ gap: 10 }}
                                         pl={2}
-                                        color="white"
+                                        color={textColor}
                                         _hover={{
-                                            textDecoration: 'none' // No underline on hover
+                                            textDecoration: 'none',
+                                            bgGradient: gradientColors,
+                                            bgClip: 'text',
+                                            color: 'transparent'
                                         }}
+                                        transition="all 0.3s ease"
                                     >
-                                        <PiLinkBold />
+                                        <PiLinkBold color={textColor} />
                                         <Box
                                             as="span"
-                                            color="inherit"
                                             _hover={{
                                                 bgGradient: gradientColors,
                                                 bgClip: 'text',
-                                                color: 'transparent',
-                                                transition: 'color 0.3s ease' // Add transition
+                                                color: 'transparent'
                                             }}
                                         >
                                             F1 Buddy
                                         </Box>
-                                        <IoLogoPython />
-                                        <IoLogoDiscord />
-                                        <TbApi />
-                                        <IoCloud />
+                                        <IoLogoPython color={logoColor} />
+                                        <IoLogoDiscord color={logoColor} />
+                                        <TbApi color={logoColor} />
+                                        <IoCloud color={logoColor} />
                                     </Link>
                                 </Heading>
                                 <p>
@@ -119,28 +122,30 @@ const Projects = () => {
                                         alignItems="center"
                                         style={{ gap: 10 }}
                                         pl={2}
-                                        color="white"
+                                        color={textColor}
                                         _hover={{
-                                            textDecoration: 'none' // No underline on hover
+                                            textDecoration: 'none',
+                                            bgGradient: gradientColors,
+                                            bgClip: 'text',
+                                            color: 'transparent'
                                         }}
+                                        transition="all 0.3s ease"
                                     >
-                                        <PiLinkBold />
+                                        <PiLinkBold color={textColor} />
                                         <Box
                                             as="span"
-                                            color="inherit"
                                             _hover={{
                                                 bgGradient: gradientColors,
                                                 bgClip: 'text',
-                                                color: 'transparent',
-                                                transition: 'color 0.3s ease' // Add transition
+                                                color: 'transparent'
                                             }}
                                         >
                                             WanderSync
                                         </Box>
-                                        <IoLogoPython />
-                                        <IoLogoJavascript />
-                                        <TbApi />
-                                        <IoCloud />
+                                        <IoLogoPython color={logoColor} />
+                                        <IoLogoJavascript color={logoColor} />
+                                        <TbApi color={logoColor} />
+                                        <IoCloud color={logoColor} />
                                     </Link>
                                 </Heading>
                                 <p>WanderSync is a travel planner that uses data science and natural language processing to suggest recommendations.</p>

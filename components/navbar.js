@@ -29,8 +29,8 @@ const gradientColors = 'linear(to-r, blue.400, purple.500)';
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-    const navbarActiveColor = useColorModeValue('white', 'white')
+    const inactiveColor = useColorModeValue('black', 'white')
+    const navbarActiveColor = useColorModeValue('black', 'white')
 
     return (
         <NextLink href={href} passHref scroll={false}>
@@ -44,6 +44,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
                     bgGradient: gradientColors,
                     bgClip: 'text'
                 }}
+                
                 target={target}
                 {...props}
             >
