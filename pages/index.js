@@ -9,9 +9,9 @@ import {
     GridItem,
     VStack,
     Flex
-} from '@chakra-ui/react'
-import { motion } from 'framer-motion'
-import AnimatedSection from '../components/animatedsection'
+} from '@chakra-ui/react';
+import { motion } from 'framer-motion';
+import AnimatedSection from '../components/animatedsection';
 import { IoBriefcaseOutline, IoNewspaper } from "react-icons/io5";
 
 // Define a basic Section component
@@ -24,21 +24,34 @@ const Section = ({ children, ...props }) => (
     >
         {children}
     </Box>
-)
+);
 
 const fadeInUp = {
     initial: { y: 20, opacity: 0 },
     animate: { y: 0, opacity: 1 }
-}
+};
 
 const Page = () => {
-    const gradientColors = 'linear(to-r, blue.400, purple.500)';
-
-    // Define background color for text visibility
-    const textColor = useColorModeValue('gray.800', 'white');
+    const gradientColors = 'linear(to-r, blue.400, purple.500)'; // Keeping your gradient colors
 
     return (
         <Container>
+            <style>
+                {`
+                    @keyframes lavaLampEffect {
+                        0% {
+                            background-position: 0% 0%;
+                        }
+                        50% {
+                            background-position: 100% 100%;
+                        }
+                        100% {
+                            background-position: 0% 0%;
+                        }
+                    }
+                `}
+            </style>
+
             <Box h="30" />
             <Box
                 as={motion.div}
@@ -48,12 +61,14 @@ const Page = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 borderRadius="lg"
                 bgGradient={gradientColors}
+                bgSize="200% 200%"
+                animation="lavaLampEffect 8s ease infinite"
                 p={6}
-                mb={3} // Adjust spacing here
+                mb={3}
                 textAlign="center"
                 color="white"
-                fontWeight="normal" // Ensure normal font weight
-                boxShadow="none" // Remove card-like shadow
+                fontWeight="normal"
+                boxShadow="none"
             >
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
@@ -66,7 +81,7 @@ const Page = () => {
 
             <Box>
                 <AnimatedSection index={0}>
-                    <Box mb={1}> {/* Adjust the spacing here */}
+                    <Box mb={1}>
                         <Section>
                             <Box display={{ md: 'flex' }}>
                                 <Box flexGrow={1}>
@@ -76,7 +91,7 @@ const Page = () => {
                                         position="relative"
                                         pb={2}
                                         fontSize="2xl"
-                                        color={textColor}
+                                        color={useColorModeValue('gray.800', 'white')}
                                         display="inline-block"
                                     >
                                         About Me &nbsp;ⓘ
@@ -90,7 +105,7 @@ const Page = () => {
                                             borderRadius="md"
                                         />
                                     </Heading>
-                                    <Text transition="color 0.3s ease" color={textColor}>
+                                    <Text transition="color 0.3s ease" color={useColorModeValue('gray.800', 'white')}>
                                         <br />
                                         I&apos;m Anurag Kar, a backend-focused developer specializing in Python and Python frameworks.
                                         <br />
@@ -116,7 +131,7 @@ const Page = () => {
                 </AnimatedSection>
 
                 <AnimatedSection index={1}>
-                    <Box mb={1}> {/* Adjust the spacing here */}
+                    <Box mb={1}>
                         <Section>
                             <Heading
                                 as="h3"
@@ -124,7 +139,7 @@ const Page = () => {
                                 fontSize="lg"
                                 position="relative"
                                 pb={2}
-                                color={textColor}
+                                color={useColorModeValue('gray.800', 'white')}
                                 display="inline-block"
                             >
                                 Education &nbsp;✎
@@ -143,9 +158,9 @@ const Page = () => {
                                     <GridItem width="10em">
                                         <Text
                                             fontSize="sm"
-                                            fontWeight="bold" // Make dates bold
+                                            fontWeight="bold"
                                             fontFamily="'Roboto', sans-serif"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                         >
                                             Sep 2021 - Dec 2024
                                         </Text>
@@ -156,7 +171,7 @@ const Page = () => {
                                         </Text>
                                         <Text
                                             fontSize="sm"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                         >
                                             Bachelor of Science in Computer Science
                                         </Text>
@@ -168,7 +183,7 @@ const Page = () => {
                 </AnimatedSection>
 
                 <AnimatedSection index={2}>
-                    <Box mb={1}> {/* Adjust the spacing here */}
+                    <Box mb={1}>
                         <Section>
                             <Heading
                                 as="h3"
@@ -176,7 +191,7 @@ const Page = () => {
                                 fontSize="lg"
                                 position="relative"
                                 pb={2}
-                                color={textColor}
+                                color={useColorModeValue('gray.800', 'white')}
                                 display="inline-block"
                             >
                                 <Flex align="center">
@@ -199,9 +214,9 @@ const Page = () => {
                                     <GridItem width="10em">
                                         <Text
                                             fontSize="sm"
-                                            fontWeight="bold" // Make dates bold
+                                            fontWeight="bold"
                                             fontFamily="'Roboto', sans-serif"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                             whiteSpace="nowrap"
                                         >
                                             May 2024 – Aug 2024
@@ -213,7 +228,7 @@ const Page = () => {
                                         </Text>
                                         <Text
                                             fontSize="sm"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                         >
                                             Smurfit Westrock
                                         </Text>
@@ -223,9 +238,9 @@ const Page = () => {
                                     <GridItem width="10em">
                                         <Text
                                             fontSize="sm"
-                                            fontWeight="bold" // Make dates bold
+                                            fontWeight="bold"
                                             fontFamily="'Roboto', sans-serif"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                             whiteSpace="nowrap"
                                         >
                                             April 2024 – May 2024
@@ -237,7 +252,7 @@ const Page = () => {
                                         </Text>
                                         <Text
                                             fontSize="sm"
-                                            color={textColor}
+                                            color={useColorModeValue('gray.800', 'white')}
                                         >
                                             New York Institute of Technology
                                         </Text>
@@ -249,7 +264,7 @@ const Page = () => {
                 </AnimatedSection>
 
                 <AnimatedSection index={3}>
-                    <Box mb={1}> {/* Adjust the spacing here */}
+                    <Box mb={1}>
                         <Section>
                             <Heading
                                 as="h3"
@@ -257,7 +272,7 @@ const Page = () => {
                                 fontSize="lg"
                                 position="relative"
                                 pb={2}
-                                color={textColor}
+                                color={useColorModeValue('gray.800', 'white')}
                                 display="inline-block"
                             >
                                 <Flex align="center">
@@ -293,7 +308,7 @@ const Page = () => {
                 </AnimatedSection>
             </Box>
         </Container>
-    )
-}
+    );
+};
 
-export default Page
+export default Page;
