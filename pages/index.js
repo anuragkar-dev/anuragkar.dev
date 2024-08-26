@@ -12,7 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/animatedsection';
-import { IoBriefcaseOutline, IoNewspaper } from "react-icons/io5";
+import { IoBriefcaseOutline, IoDocumentTextOutline, IoDesktopOutline } from "react-icons/io5";
 import { PiLinkBold } from 'react-icons/pi'
 
 // Define a basic Section component
@@ -145,7 +145,7 @@ const Page = () => {
                             >
                                 <Flex align="center">
                                     Resume &nbsp;
-                                    <IoNewspaper />
+                                    <IoDocumentTextOutline />
                                 </Flex>
 
                                 <Box
@@ -270,6 +270,7 @@ const Page = () => {
                             >
                                 <Flex align="center">
                                     Projects &nbsp;
+                                    <IoDesktopOutline />
                                 </Flex>
 
                                 <Box

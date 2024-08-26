@@ -21,7 +21,7 @@ import {
     IoLogoLinkedin,
     IoCodeSlash,
     IoHome,
-    IoNewspaper
+    IoDocumentTextOutline
 } from 'react-icons/io5'
 import styled from '@emotion/styled'
 
@@ -122,7 +122,7 @@ const Navbar = props => {
                             style={{ gap: 4, textDecoration: 'none' }}
                             pl={2}
                         >
-                            <IoNewspaper style={{ color: useColorModeValue('black', 'white') }} />
+                            <IoDocumentTextOutline style={{ color: useColorModeValue('black', 'white') }} />
                             Resume
                         </LinkItem>
                     </LogoWrapper>
@@ -211,7 +211,7 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoNewspaper style={{ color: useColorModeValue('black', 'white') }} />
+                                        <IoDocumentTextOutline style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             Resume
                                         </span>
