@@ -25,17 +25,25 @@ import {
 } from 'react-icons/io5'
 import styled from '@emotion/styled'
 
+const gradientColors = 'linear(to-r, blue.400, purple.500)';
+
 const LinkItem = ({ href, path, target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
-    const navbarActiveColor = useColorModeValue('#7989d7', '#42fff8')
+    const navbarActiveColor = useColorModeValue('white', 'white')
+
     return (
         <NextLink href={href} passHref scroll={false}>
             <Link
                 as="span"
                 p={2}
-                bg={active ? 'grassTeal' : undefined}
                 color={active ? navbarActiveColor : inactiveColor}
+                fontWeight={active ? 'bold' : 'normal'}
+                _hover={{ 
+                    textDecoration: 'underline',
+                    bgGradient: gradientColors,
+                    bgClip: 'text'
+                }}
                 target={target}
                 {...props}
             >
@@ -45,12 +53,11 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     )
 }
 
-const StyledLogo = styled.span`
+const LogoWrapper = styled.span`
     &:hover {
         transition: transform 0.2s;
         transform: scale(1.1);
     }
-
     & {
         transition: transform 0.2s;
         transform: scale(1);
@@ -92,7 +99,7 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}
                 >
-                    <StyledLogo>
+                    <LogoWrapper>
                         <LinkItem
                             href="/projects"
                             path={path}
@@ -101,11 +108,11 @@ const Navbar = props => {
                             style={{ gap: 4, textDecoration: 'none' }}
                             pl={2}
                         >
-                            <IoCodeSlash />
+                            <IoCodeSlash style={{ color: useColorModeValue('black', 'white') }} />
                             Projects
                         </LinkItem>
-                    </StyledLogo>
-                    <StyledLogo>
+                    </LogoWrapper>
+                    <LogoWrapper>
                         <LinkItem
                             href="/Anurag_Kar_resume.pdf"
                             path={path}
@@ -114,11 +121,11 @@ const Navbar = props => {
                             style={{ gap: 4, textDecoration: 'none' }}
                             pl={2}
                         >
-                            <IoNewspaper />
+                            <IoNewspaper style={{ color: useColorModeValue('black', 'white') }} />
                             Resume
                         </LinkItem>
-                    </StyledLogo>
-                    <StyledLogo>
+                    </LogoWrapper>
+                    <LogoWrapper>
                         <LinkItem
                             target="_blank"
                             href="https://github.com/anuragcar"
@@ -128,11 +135,11 @@ const Navbar = props => {
                             style={{ gap: 4, textDecoration: 'none' }}
                             pl={2}
                         >
-                            <IoLogoGithub />
+                            <IoLogoGithub style={{ color: useColorModeValue('black', 'white') }} />
                             GitHub
                         </LinkItem>
-                    </StyledLogo>
-                    <StyledLogo>
+                    </LogoWrapper>
+                    <LogoWrapper>
                         <LinkItem
                             target="_blank"
                             href="https://linkedin.com/in/anuragcar"
@@ -142,10 +149,10 @@ const Navbar = props => {
                             style={{ gap: 4, textDecoration: 'none' }}
                             pl={2}
                         >
-                            <IoLogoLinkedin />
+                            <IoLogoLinkedin style={{ color: useColorModeValue('black', 'white') }} />
                             LinkedIn
                         </LinkItem>
-                    </StyledLogo>
+                    </LogoWrapper>
                 </Stack>
 
                 <Box flex={1} align="right">
@@ -164,12 +171,6 @@ const Navbar = props => {
                                 variant="outline"
                                 aria-label="Options"
                             />
-                            {/* edit these tags (MenuList and MenuItem) for colors 
-                                backgroundColor={useColorModeValue(
-                                    'blue',
-                                    'orange'
-                                )}
-                             */}
                             <MenuList>
                                 <NextLink href="/" passHref>
                                     <MenuItem
@@ -179,7 +180,7 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoHome />
+                                        <IoHome style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             About
                                         </span>
@@ -194,7 +195,7 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoCodeSlash />
+                                        <IoCodeSlash style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             Projects
                                         </span>
@@ -209,17 +210,14 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoNewspaper />
+                                        <IoNewspaper style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             Resume
                                         </span>
                                     </MenuItem>
                                 </NextLink>
 
-                                <NextLink
-                                    href="https://github.com/anuragcar"
-                                    passHref
-                                >
+                                <NextLink href="https://github.com/anuragcar" passHref>
                                     <MenuItem
                                         as={Link}
                                         style={{
@@ -227,17 +225,14 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoLogoGithub />
+                                        <IoLogoGithub style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             GitHub
                                         </span>
                                     </MenuItem>
                                 </NextLink>
 
-                                <NextLink
-                                    href="https://linkedin.com/in/anuragcar"
-                                    passHref
-                                >
+                                <NextLink href="https://linkedin.com/in/anuragcar" passHref>
                                     <MenuItem
                                         as={Link}
                                         style={{
@@ -245,7 +240,7 @@ const Navbar = props => {
                                             textDecoration: 'none'
                                         }}
                                     >
-                                        <IoLogoLinkedin />
+                                        <IoLogoLinkedin style={{ color: useColorModeValue('black', 'white') }} />
                                         <span style={{ marginLeft: '0.5rem' }}>
                                             LinkedIn
                                         </span>
