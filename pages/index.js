@@ -63,7 +63,7 @@ const Page = () => {
                 borderRadius="10px"
                 bgGradient={gradientColors}
                 bgSize="200% 200%"
-                animation="lavaLampEffect 7.5s ease infinite"
+                animation="lavaLampEffect 7s ease infinite"
                 p={6}
                 mb={3}
                 textAlign="center"
