@@ -13,6 +13,7 @@ import {
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/animatedsection';
 import { IoBriefcaseOutline, IoNewspaper } from "react-icons/io5";
+import { PiLinkBold } from 'react-icons/pi'
 
 // Define a basic Section component
 const Section = ({ children, ...props }) => (
@@ -33,6 +34,7 @@ const fadeInUp = {
 
 const Page = () => {
     const gradientColors = 'linear(to-r, blue.400, purple.500)'; // Keeping your gradient colors
+    const textColor = useColorModeValue('black', 'white');
 
     return (
         <Container>
@@ -59,14 +61,14 @@ const Page = () => {
                 animate="animate"
                 variants={fadeInUp}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                borderRadius="lg"
+                borderRadius="10px"
                 bgGradient={gradientColors}
                 bgSize="200% 200%"
                 animation="lavaLampEffect 8s ease infinite"
                 p={6}
                 mb={3}
                 textAlign="center"
-                color="white"
+                color={useColorModeValue('black', 'white')}
                 fontWeight="normal"
                 boxShadow="none"
             >
@@ -81,7 +83,7 @@ const Page = () => {
 
             <Box>
                 <AnimatedSection index={0}>
-                    <Box mb={1}>
+                    <Box mb={3}>
                         <Section>
                             <Box display={{ md: 'flex' }}>
                                 <Box flexGrow={1}>
@@ -91,7 +93,7 @@ const Page = () => {
                                         position="relative"
                                         pb={2}
                                         fontSize="2xl"
-                                        color={useColorModeValue('gray.800', 'white')}
+                                        color={useColorModeValue('black', 'white')}
                                         display="inline-block"
                                     >
                                         About Me &nbsp;ⓘ
@@ -105,7 +107,7 @@ const Page = () => {
                                             borderRadius="md"
                                         />
                                     </Heading>
-                                    <Text transition="color 0.3s ease" color={useColorModeValue('gray.800', 'white')}>
+                                    <Text transition="color 0.3s ease" color={useColorModeValue('black', 'white')}>
                                         <br />
                                         I&apos;m Anurag Kar, a backend-focused developer specializing in Python and Python frameworks.
                                         <br />
@@ -131,7 +133,7 @@ const Page = () => {
                 </AnimatedSection>
 
                 <AnimatedSection index={1}>
-                    <Box mb={1}>
+                    <Box mb={3}>
                         <Section>
                             <Heading
                                 as="h3"
@@ -139,140 +141,7 @@ const Page = () => {
                                 fontSize="lg"
                                 position="relative"
                                 pb={2}
-                                color={useColorModeValue('gray.800', 'white')}
-                                display="inline-block"
-                            >
-                                Education &nbsp;✎
-                                <Box
-                                    position="absolute"
-                                    bottom={0}
-                                    left={0}
-                                    width="100%"
-                                    height="2px"
-                                    bgGradient={gradientColors}
-                                    borderRadius="md"
-                                />
-                            </Heading>
-                            <VStack spacing={4} align="stretch" mt={4}>
-                                <Grid templateColumns="auto 1fr" gap={4}>
-                                    <GridItem width="10em">
-                                        <Text
-                                            fontSize="sm"
-                                            fontWeight="bold"
-                                            fontFamily="'Roboto', sans-serif"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                        >
-                                            Sep 2021 - Dec 2024
-                                        </Text>
-                                    </GridItem>
-                                    <Box textAlign="left">
-                                        <Text fontWeight="bold">
-                                            New York Institute of Technology
-                                        </Text>
-                                        <Text
-                                            fontSize="sm"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                        >
-                                            Bachelor of Science in Computer Science
-                                        </Text>
-                                    </Box>
-                                </Grid>
-                            </VStack>
-                        </Section>
-                    </Box>
-                </AnimatedSection>
-
-                <AnimatedSection index={2}>
-                    <Box mb={1}>
-                        <Section>
-                            <Heading
-                                as="h3"
-                                variant="section-title"
-                                fontSize="lg"
-                                position="relative"
-                                pb={2}
-                                color={useColorModeValue('gray.800', 'white')}
-                                display="inline-block"
-                            >
-                                <Flex align="center">
-                                    Experience &nbsp;
-                                    <IoBriefcaseOutline />
-                                </Flex>
-
-                                <Box
-                                    position="absolute"
-                                    bottom={0}
-                                    left={0}
-                                    width="100%"
-                                    height="2px"
-                                    bgGradient={gradientColors}
-                                    borderRadius="md"
-                                />
-                            </Heading>
-                            <VStack spacing={4} align="stretch" mt={4}>
-                                <Grid templateColumns="auto 1fr" gap={4}>
-                                    <GridItem width="10em">
-                                        <Text
-                                            fontSize="sm"
-                                            fontWeight="bold"
-                                            fontFamily="'Roboto', sans-serif"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                            whiteSpace="nowrap"
-                                        >
-                                            May 2024 – Aug 2024
-                                        </Text>
-                                    </GridItem>
-                                    <GridItem>
-                                        <Text fontWeight="bold">
-                                            Platforms Operations Intern
-                                        </Text>
-                                        <Text
-                                            fontSize="sm"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                        >
-                                            Smurfit Westrock
-                                        </Text>
-                                    </GridItem>
-                                </Grid>
-                                <Grid templateColumns="auto 1fr" gap={4}>
-                                    <GridItem width="10em">
-                                        <Text
-                                            fontSize="sm"
-                                            fontWeight="bold"
-                                            fontFamily="'Roboto', sans-serif"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                            whiteSpace="nowrap"
-                                        >
-                                            April 2024 – May 2024
-                                        </Text>
-                                    </GridItem>
-                                    <GridItem>
-                                        <Text fontWeight="bold">
-                                            IT Student Assistant
-                                        </Text>
-                                        <Text
-                                            fontSize="sm"
-                                            color={useColorModeValue('gray.800', 'white')}
-                                        >
-                                            New York Institute of Technology
-                                        </Text>
-                                    </GridItem>
-                                </Grid>
-                            </VStack>
-                        </Section>
-                    </Box>
-                </AnimatedSection>
-
-                <AnimatedSection index={3}>
-                    <Box mb={1}>
-                        <Section>
-                            <Heading
-                                as="h3"
-                                variant="section-title"
-                                fontSize="lg"
-                                position="relative"
-                                pb={2}
-                                color={useColorModeValue('gray.800', 'white')}
+                                color={useColorModeValue('black', 'white')}
                                 display="inline-block"
                             >
                                 <Flex align="center">
@@ -303,6 +172,235 @@ const Page = () => {
                             >
                                 View my full resume here
                             </Link>
+                        </Section>
+                    </Box>
+                </AnimatedSection>
+
+                <AnimatedSection index={2}>
+                    <Box mb={-1}>
+                        <Section>
+                            <Heading
+                                as="h3"
+                                variant="section-title"
+                                fontSize="lg"
+                                position="relative"
+                                pb={2}
+                                color={useColorModeValue('black', 'white')}
+                                display="inline-block"
+                            >
+                                <Flex align="center">
+                                    Experience &nbsp;
+                                    <IoBriefcaseOutline />
+                                </Flex>
+
+                                <Box
+                                    position="absolute"
+                                    bottom={0}
+                                    left={0}
+                                    width="100%"
+                                    height="2px"
+                                    bgGradient={gradientColors}
+                                    borderRadius="md"
+                                />
+                            </Heading>
+                            <VStack spacing={4} align="stretch" mt={4}>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            May 2024 – Aug 2024
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Text fontWeight="bold">
+                                            Platforms Operations Intern
+                                        </Text>
+                                        <Text
+                                            fontSize="sm"
+                                            color={useColorModeValue('black', 'white')}
+                                        >
+                                            Smurfit Westrock
+                                        </Text>
+                                    </GridItem>
+                                </Grid>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            April 2024 – May 2024
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Text fontWeight="bold">
+                                            IT Student Assistant
+                                        </Text>
+                                        <Text
+                                            fontSize="sm"
+                                            color={useColorModeValue('black', 'white')}
+                                        >
+                                            New York Institute of Technology
+                                        </Text>
+                                    </GridItem>
+                                </Grid>
+                            </VStack>
+                        </Section>
+                    </Box>
+                </AnimatedSection>
+
+                <AnimatedSection index={3}>
+                    <Box mb={3}>
+                        <Section>
+                            <Heading
+                                as="h3"
+                                variant="section-title"
+                                fontSize="lg"
+                                position="relative"
+                                pb={2}
+                                color={useColorModeValue('black', 'white')}
+                                display="inline-block"
+                            >
+                                <Flex align="center">
+                                    Projects &nbsp;
+                                </Flex>
+
+                                <Box
+                                    position="absolute"
+                                    bottom={0}
+                                    left={0}
+                                    width="100%"
+                                    height="2px"
+                                    bgGradient={gradientColors}
+                                    borderRadius="md"
+                                />
+                            </Heading>
+                            <VStack spacing={4} align="stretch" mt={4}>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            Feb 2023 - Present
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Link
+                                            href="/projects"
+                                            fontWeight="bold"
+                                            color={useColorModeValue('black', 'white')}
+                                            textDecoration="none"  // Remove underline
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                textDecoration: 'none',
+                                                transition: 'all 0.3s ease',
+                                            }}
+                                            display="flex"           // Use flexbox for alignment
+                                            alignItems="center"      // Align items vertically
+                                        >
+                                            <PiLinkBold color={useColorModeValue('black', 'white')} />
+                                            <Text ml={2}>F1Buddy</Text>
+                                        </Link>
+                                    </GridItem>
+                                </Grid>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            Sep 2023 - Dec 2023
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Link
+                                            href="/projects"
+                                            fontWeight="bold"
+                                            color={useColorModeValue('black', 'white')}
+                                            textDecoration="none"  // Remove underline
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                textDecoration: 'none',
+                                                transition: 'all 0.3s ease',
+                                            }}
+                                            display="flex"           // Use flexbox for alignment
+                                            alignItems="center"      // Align items vertically
+                                        >
+                                            <PiLinkBold color={useColorModeValue('black', 'white')} />
+                                            <Text ml={2}>WanderSync</Text>
+                                        </Link>
+                                    </GridItem>
+                                </Grid>
+                            </VStack>
+                        </Section>
+                    </Box>
+                </AnimatedSection>
+
+                <AnimatedSection index={4}>
+                    <Box mb={3}>
+                        <Section>
+                            <Heading
+                                as="h3"
+                                variant="section-title"
+                                fontSize="lg"
+                                position="relative"
+                                pb={2}
+                                color={useColorModeValue('black', 'white')}
+                                display="inline-block"
+                            >
+                                Education &nbsp;✎
+                                <Box
+                                    position="absolute"
+                                    bottom={0}
+                                    left={0}
+                                    width="100%"
+                                    height="2px"
+                                    bgGradient={gradientColors}
+                                    borderRadius="md"
+                                />
+                            </Heading>
+                            <VStack spacing={4} align="stretch" mt={4}>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                        >
+                                            Sep 2021 - Dec 2024
+                                        </Text>
+                                    </GridItem>
+                                    <Box textAlign="left">
+                                        <Text fontWeight="bold">
+                                            New York Institute of Technology
+                                        </Text>
+                                        <Text
+                                            fontSize="sm"
+                                            color={useColorModeValue('black', 'white')}
+                                        >
+                                            Bachelor of Science in Computer Science
+                                        </Text>
+                                    </Box>
+                                </Grid>
+                            </VStack>
                         </Section>
                     </Box>
                 </AnimatedSection>
