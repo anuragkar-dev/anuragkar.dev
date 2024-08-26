@@ -8,7 +8,6 @@ import {
     Grid,
     GridItem,
     VStack,
-    useTheme,
     Flex
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
