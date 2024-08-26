@@ -33,7 +33,6 @@ const fadeInUp = {
 }
 
 const Page = () => {
-    const { colors } = useTheme();
     const gradientColors = 'linear(to-r, blue.400, purple.500)';
 
     // Define background color for text visibility
@@ -60,9 +59,9 @@ const Page = () => {
                 <motion.div
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: 1.25, ease: "easeOut" }}
                 >
-                    <Heading fontSize="3xl">Welcome to Anurag's World</Heading>
+                    <Heading fontSize="3xl">anuragkar.dev</Heading>
                 </motion.div>
             </Box>
 
