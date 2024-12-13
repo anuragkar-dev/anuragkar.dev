@@ -73,7 +73,7 @@ const Projects = () => {
                                                 color: 'transparent'
                                             }}
                                         >
-                                            F1 Buddy
+                                            F1Buddy
                                         </Box>
                                         <IoLogoPython color={logoColor} />
                                         <IoLogoDiscord color={logoColor} />
@@ -153,6 +153,72 @@ const Projects = () => {
                                 <VideoPlayer />
                             </Box>
                         </AnimatedSection>
+                        <AnimatedSection index={2}>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <Box>
+                            <Heading as="h4" fontSize={'1.5em'} mb={4}>
+                                <Link
+                                    href="https://github.com/maryeete/Senior-Project"
+                                    display="inline-flex"
+                                    alignItems="center"
+                                    style={{ gap: 10 }}
+                                    pl={2}
+                                    color={textColor}
+                                    _hover={{
+                                        textDecoration: 'none',
+                                        bgGradient: gradientColors,
+                                        bgClip: 'text',
+                                        color: 'transparent'
+                                    }}
+                                    transition="all 0.3s ease"
+                                >
+                                    <PiLinkBold color={textColor} />
+                                    <Box
+                                        as="span"
+                                        _hover={{
+                                            bgGradient: gradientColors,
+                                            bgClip: 'text',
+                                            color: 'transparent'
+                                        }}
+                                    >
+                                        SentimentAnalyzer
+                                    </Box>
+                                    <IoLogoPython color={logoColor} />
+                                    <IoLogoJavascript color={logoColor} />
+                                    <TbApi color={logoColor} />
+                                    <IoLogoPython color={logoColor} />
+                                </Link>
+                            </Heading>
+                            <p>SentimentAnalyzer is a multi-modal tool that analyzes sentiment from text, audio, video, and images using machine learning, computer vision, and audio processing techniques.</p>
+                            <br />
+                            <Box
+                                maxW="100%"
+                                mx="auto"
+                                my={4}
+                                position="relative"
+                                paddingBottom="56.25%" // 16:9 aspect ratio
+                                height={0}
+                                overflow="hidden"
+                            >
+                                <iframe
+                                    width="100%"
+                                    height="100%"
+                                    src="https://www.youtube.com/embed/vT3rSFLHR5c"
+                                    title="Sentiment Analysis Demo"
+                                    frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin"
+                                    allowFullScreen
+                                    style={{ position: 'absolute', top: 0, left: 0 }}
+                                />
+                            </Box>
+                            <br />
+                        </Box>
+                    </AnimatedSection>
+
                     </SimpleGrid>
                 </Box>
             </Container>

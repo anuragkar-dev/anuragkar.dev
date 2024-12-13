@@ -329,6 +329,38 @@ const Page = () => {
                                             color={useColorModeValue('black', 'white')}
                                             whiteSpace="nowrap"
                                         >
+                                            Jan 2024 - Dec 2024
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Link
+                                            href="/projects"
+                                            fontWeight="bold"
+                                            color={useColorModeValue('black', 'white')}
+                                            textDecoration="none"  // Remove underline
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                textDecoration: 'none',
+                                                transition: 'all 0.3s ease',
+                                            }}
+                                            display="flex"           // Use flexbox for alignment
+                                            alignItems="center"      // Align items vertically
+                                        >
+                                            <PiLinkBold color={useColorModeValue('black', 'white')} />
+                                            <Text ml={2}>SentimentAnalyzer</Text>
+                                        </Link>
+                                    </GridItem>
+                                </Grid>
+                                <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
                                             Sep 2023 - Dec 2023
                                         </Text>
                                     </GridItem>
