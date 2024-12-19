@@ -302,7 +302,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="/projects"
+                                            href="https://github.com/F1-Buddy/f1buddy-python"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
@@ -316,7 +316,7 @@ const Page = () => {
                                             alignItems="center"      // Align items vertically
                                         >
                                             <PiLinkBold color={useColorModeValue('black', 'white')} />
-                                            <Text ml={2}>F1 Buddy</Text>
+                                            <Text ml={2}>F1Buddy</Text>
                                         </Link>
                                     </GridItem>
                                 </Grid>
@@ -334,7 +334,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="/projects"
+                                            href="https://github.com/maryeete/Sentiment-Analysis"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
@@ -348,7 +348,7 @@ const Page = () => {
                                             alignItems="center"      // Align items vertically
                                         >
                                             <PiLinkBold color={useColorModeValue('black', 'white')} />
-                                            <Text ml={2}>SentimentAnalyzer</Text>
+                                            <Text ml={2}>Sentiment Analysis Web App</Text>
                                         </Link>
                                     </GridItem>
                                 </Grid>
@@ -366,7 +366,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="/projects"
+                                            href="https://github.com/gillgurpinderr/collaborative-travel-planner"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
