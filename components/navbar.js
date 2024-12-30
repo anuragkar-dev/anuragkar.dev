@@ -129,7 +129,7 @@ const Navbar = props => {
                     <LogoWrapper>
                         <LinkItem
                             target="_blank"
-                            href="https://github.com/anuragcar"
+                            href="https://github.com/anuragkar-dev"
                             path={path}
                             display="inline-flex"
                             alignItems="center"
@@ -143,7 +143,7 @@ const Navbar = props => {
                     <LogoWrapper>
                         <LinkItem
                             target="_blank"
-                            href="https://linkedin.com/in/anuragcar"
+                            href="https://www.linkedin.com/in/anuragkar-dev/"
                             path={path}
                             display="inline-flex"
                             alignItems="center"
@@ -218,7 +218,7 @@ const Navbar = props => {
                                     </MenuItem>
                                 </NextLink>
 
-                                <NextLink href="https://github.com/anuragcar" passHref>
+                                <NextLink href="https://github.com/anuragkar-dev" passHref>
                                     <MenuItem
                                         as={Link}
                                         style={{
@@ -233,7 +233,7 @@ const Navbar = props => {
                                     </MenuItem>
                                 </NextLink>
 
-                                <NextLink href="https://linkedin.com/in/anuragcar" passHref>
+                                <NextLink href="https://www.linkedin.com/in/anuragkar-dev/" passHref>
                                     <MenuItem
                                         as={Link}
                                         style={{
