@@ -117,7 +117,7 @@ const Projects = () => {
                         <Box>
                             <Heading as="h4" fontSize={'1.5em'} mb={4}>
                                 <Link
-                                    href="https://github.com/maryeete/Sentiment-Analysis"
+                                    href="https://github.com/anuragkar-dev/Sentiment-Analysis"
                                     display="inline-flex"
                                     alignItems="center"
                                     style={{ gap: 10 }}
@@ -178,7 +178,7 @@ const Projects = () => {
                             <Box>
                                 <Heading as="h4" fontSize={'1.5em'} mb={4}>
                                     <Link
-                                        href="https://github.com/gillgurpinderr/collaborative-travel-planner"
+                                        href="https://github.com/anuragkar-dev/WanderSync"
                                         display="inline-flex"
                                         alignItems="center"
                                         style={{ gap: 10 }}

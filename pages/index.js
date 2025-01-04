@@ -334,7 +334,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="https://github.com/maryeete/Sentiment-Analysis"
+                                            href="https://github.com/anuragkar-dev/WanderSync"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
