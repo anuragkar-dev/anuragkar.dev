@@ -334,7 +334,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="https://github.com/anuragkar-dev/WanderSync"
+                                            href="https://github.com/anuragkar-dev/Sentiment-Analysis"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
@@ -366,7 +366,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Link
-                                            href="https://github.com/gillgurpinderr/collaborative-travel-planner"
+                                            href="https://github.com/anuragkar-dev/WanderSync"
                                             fontWeight="bold"
                                             color={useColorModeValue('black', 'white')}
                                             textDecoration="none"  // Remove underline
