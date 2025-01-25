@@ -113,67 +113,6 @@ const Projects = () => {
                                 </Carousel>
                             </Box>
                         </AnimatedSection>
-                        <AnimatedSection index={1}>
-                        <Box>
-                            <Heading as="h4" fontSize={'1.5em'} mb={4}>
-                                <Link
-                                    href="https://github.com/anuragkar-dev/Sentiment-Analysis"
-                                    display="inline-flex"
-                                    alignItems="center"
-                                    style={{ gap: 10 }}
-                                    pl={2}
-                                    color={textColor}
-                                    _hover={{
-                                        textDecoration: 'none',
-                                        bgGradient: gradientColors,
-                                        bgClip: 'text',
-                                        color: 'transparent'
-                                    }}
-                                    transition="all 0.3s ease"
-                                >
-                                    <PiLinkBold color={textColor} />
-                                    <Box
-                                        as="span"
-                                        _hover={{
-                                            bgGradient: gradientColors,
-                                            bgClip: 'text',
-                                            color: 'transparent'
-                                        }}
-                                    >
-                                        Sentiment Analysis Web App
-                                    </Box>
-                                    <IoLogoPython color={logoColor} />
-                                    <IoLogoJavascript color={logoColor} />
-                                    <TbApi color={logoColor} />
-                                    <IoLogoPython color={logoColor} />
-                                </Link>
-                            </Heading>
-                            <p>This sentiment analysis web app is a multi-modal tool that analyzes sentiment from text, audio, video, and images using machine learning, computer vision, and audio processing techniques.</p>
-                            <br />
-                            <Box
-                                maxW="100%"
-                                mx="auto"
-                                my={4}
-                                position="relative"
-                                paddingBottom="56.25%" // 16:9 aspect ratio
-                                height={0}
-                                overflow="hidden"
-                            >
-                                <iframe
-                                    width="100%"
-                                    height="100%"
-                                    src="https://www.youtube.com/embed/vT3rSFLHR5c"
-                                    title="Sentiment Analysis Demo"
-                                    frameBorder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerPolicy="strict-origin-when-cross-origin"
-                                    allowFullScreen
-                                    style={{ position: 'absolute', top: 0, left: 0 }}
-                                />
-                            </Box>
-                            <br />
-                        </Box>
-                    </AnimatedSection>
                         <AnimatedSection index={2}>
                             <Box>
                                 <Heading as="h4" fontSize={'1.5em'} mb={4}>
@@ -211,7 +150,91 @@ const Projects = () => {
                                 </Heading>
                                 <p>WanderSync is a travel planner that uses data science and natural language processing to suggest recommendations.</p>
                                 <br />
-                                <VideoPlayer />
+                                <VideoPlayer videoSrc="video/wandersync.mp4" videoType="video/mp4" />
+                            </Box>
+                            <br />
+                        </AnimatedSection>
+                        <AnimatedSection index={2}>
+                        <Box>
+                            <Heading as="h4" fontSize={'1.5em'} mb={4}>
+                                <Link
+                                    href="https://github.com/anuragkar-dev/Sentiment-Analysis"
+                                    display="inline-flex"
+                                    alignItems="center"
+                                    style={{ gap: 10 }}
+                                    pl={2}
+                                    color={textColor}
+                                    _hover={{
+                                        textDecoration: 'none',
+                                        bgGradient: gradientColors,
+                                        bgClip: 'text',
+                                        color: 'transparent'
+                                    }}
+                                    transition="all 0.3s ease"
+                                >
+                                    <PiLinkBold color={textColor} />
+                                    <Box
+                                        as="span"
+                                        _hover={{
+                                            bgGradient: gradientColors,
+                                            bgClip: 'text',
+                                            color: 'transparent'
+                                        }}
+                                    >
+                                        Sentiment Analysis Web App
+                                    </Box>
+                                    <IoLogoPython color={logoColor} />
+                                    <IoLogoJavascript color={logoColor} />
+                                    <TbApi color={logoColor} />
+                                    <IoLogoPython color={logoColor} />
+                                </Link>
+                            </Heading>
+                            <p>This sentiment analysis Flask app is a multi-modal tool that analyzes sentiment from text, audio, video, and images using machine learning, computer vision, and audio processing techniques.</p>
+                            <br />
+                            <VideoPlayer videoSrc="video/sentiment_project.mp4" videoType="video/mp4" />
+                                <br />
+                            </Box>
+                        </AnimatedSection>
+                        <AnimatedSection index={3}>
+                            <Box>
+                                <Heading as="h4" fontSize={'1.5em'} mb={4}>
+                                    <Link
+                                        href="https://github.com/anuragkar-dev/Movie-React-Project"
+                                        display="inline-flex"
+                                        alignItems="center"
+                                        style={{ gap: 10 }}
+                                        pl={2}
+                                        color={textColor}
+                                        _hover={{
+                                            textDecoration: 'none',
+                                            bgGradient: gradientColors,
+                                            bgClip: 'text',
+                                            color: 'transparent'
+                                        }}
+                                        transition="all 0.3s ease"
+                                    >
+                                        <PiLinkBold color={textColor} />
+                                        <Box
+                                            as="span"
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                color: 'transparent'
+                                            }}
+                                        >
+                                            Movie Discovery Web App
+                                        </Box>
+                                        <IoLogoPython color={logoColor} />
+                                        <IoLogoJavascript color={logoColor} />
+                                        <TbApi color={logoColor} />
+                                        <IoCloud color={logoColor} />
+                                    </Link>
+                                </Heading>
+                                <p>
+                                A React-based movie discovery web app that allows users to explore, search, and save their favorite movies.
+                                </p>
+                                <br />
+                                <VideoPlayer videoSrc="video/movie_project.mp4" videoType="video/mp4" />
                             </Box>
                         </AnimatedSection>
                     </SimpleGrid>
