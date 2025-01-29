@@ -15,8 +15,9 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/navigation'
 
-import { IoCloud, IoLogoDiscord, IoLogoJavascript, IoLogoPython } from 'react-icons/io5'
+import { IoCloud, IoLogoDiscord, IoLogoJavascript, IoLogoPython, IoLogoReact, IoLogoFirebase, IoLogoNodejs } from 'react-icons/io5'
 import { TbApi } from 'react-icons/tb'
+import { SiFlask } from "react-icons/si";
 import { PiLinkBold } from 'react-icons/pi'
 import AnimatedSection from '../components/animatedsection.js'
 import dynamic from 'next/dynamic';
@@ -77,8 +78,8 @@ const Projects = () => {
                                         </Box>
                                         <IoLogoPython color={logoColor} />
                                         <IoLogoDiscord color={logoColor} />
-                                        <TbApi color={logoColor} />
                                         <IoCloud color={logoColor} />
+                                        <TbApi color={logoColor} />
                                     </Link>
                                 </Heading>
                                 <p>
@@ -143,9 +144,10 @@ const Projects = () => {
                                             WanderSync
                                         </Box>
                                         <IoLogoPython color={logoColor} />
+                                        <SiFlask color={logoColor} />
                                         <IoLogoJavascript color={logoColor} />
-                                        <TbApi color={logoColor} />
                                         <IoCloud color={logoColor} />
+                                        <TbApi color={logoColor} />
                                     </Link>
                                 </Heading>
                                 <p>WanderSync is a travel planner that uses data science and natural language processing to suggest recommendations.</p>
@@ -184,9 +186,8 @@ const Projects = () => {
                                         Sentiment Analysis Web App
                                     </Box>
                                     <IoLogoPython color={logoColor} />
+                                    <SiFlask color={logoColor} />
                                     <IoLogoJavascript color={logoColor} />
-                                    <TbApi color={logoColor} />
-                                    <IoLogoPython color={logoColor} />
                                 </Link>
                             </Heading>
                             <p>This sentiment analysis Flask app is a multi-modal tool that analyzes sentiment from text, audio, video, and images using machine learning, computer vision, and audio processing techniques.</p>
@@ -224,10 +225,10 @@ const Projects = () => {
                                         >
                                             Movie Discovery Web App
                                         </Box>
-                                        <IoLogoPython color={logoColor} />
-                                        <IoLogoJavascript color={logoColor} />
+                                        <IoLogoReact color={logoColor} />
+                                        <IoLogoNodejs color={logoColor} />
+                                        <IoLogoFirebase color={logoColor} />
                                         <TbApi color={logoColor} />
-                                        <IoCloud color={logoColor} />
                                     </Link>
                                 </Heading>
                                 <p>
