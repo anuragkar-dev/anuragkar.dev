@@ -221,7 +221,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Text fontWeight="bold">
-                                            Platforms Operations Intern
+                                            Platform Operations Intern
                                         </Text>
                                         <Text
                                             fontSize="sm"
