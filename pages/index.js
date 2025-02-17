@@ -112,7 +112,9 @@ const Page = () => {
                                     </Heading>
                                     <Text transition="color 0.3s ease" color={useColorModeValue('black', 'white')}>
                                         <br />
-                                        I&apos;m Anurag Kar, a backend-focused developer and data analyst specializing in Python and Python frameworks.
+                                        I&apos;m Anurag Kar, 
+                                        a backend-focused developer and data analyst, with a specialization in
+                                        Python and Python frameworks.
                                         <br />
                                         <br />
                                         <strong>Looking to hire me? </strong> 
