@@ -1,5 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import Layout from "../components/layouts/main";
 import theme from "../components/theme";
 import "../styles/carousel.css";
