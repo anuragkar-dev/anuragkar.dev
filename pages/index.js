@@ -299,38 +299,6 @@ const Page = () => {
                                             color={useColorModeValue('black', 'white')}
                                             whiteSpace="nowrap"
                                         >
-                                            Jan 2025 - Present
-                                        </Text>
-                                    </GridItem>
-                                    <GridItem>
-                                        <Link
-                                            href="https://github.com/anuragkar-dev/Movie-React-Project"
-                                            fontWeight="bold"
-                                            color={useColorModeValue('black', 'white')}
-                                            textDecoration="none"  // Remove underline
-                                            _hover={{
-                                                bgGradient: gradientColors,
-                                                bgClip: 'text',
-                                                textDecoration: 'none',
-                                                transition: 'all 0.3s ease',
-                                            }}
-                                            display="flex"           // Use flexbox for alignment
-                                            alignItems="center"      // Align items vertically
-                                        >
-                                            <PiLinkBold color={useColorModeValue('black', 'white')} />
-                                            <Text ml={2}>Movie Discovery Web App</Text>
-                                        </Link>
-                                    </GridItem>
-                                </Grid>
-                                <Grid templateColumns="auto 1fr" gap={4}>
-                                    <GridItem width="10em">
-                                        <Text
-                                            fontSize="sm"
-                                            fontWeight="bold"
-                                            fontFamily="'Roboto', sans-serif"
-                                            color={useColorModeValue('black', 'white')}
-                                            whiteSpace="nowrap"
-                                        >
                                             Feb 2023 - Present
                                         </Text>
                                     </GridItem>
@@ -354,6 +322,40 @@ const Page = () => {
                                         </Link>
                                     </GridItem>
                                 </Grid>
+                                
+                            <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            Jan 2025 - Feb 2025
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Link
+                                            href="https://github.com/anuragkar-dev/Movie-React-Project"
+                                            fontWeight="bold"
+                                            color={useColorModeValue('black', 'white')}
+                                            textDecoration="none"  // Remove underline
+                                            _hover={{
+                                                bgGradient: gradientColors,
+                                                bgClip: 'text',
+                                                textDecoration: 'none',
+                                                transition: 'all 0.3s ease',
+                                            }}
+                                            display="flex"           // Use flexbox for alignment
+                                            alignItems="center"      // Align items vertically
+                                        >
+                                            <PiLinkBold color={useColorModeValue('black', 'white')} />
+                                            <Text ml={2}>Movie Discovery Web App</Text>
+                                        </Link>
+                                    </GridItem>
+                                </Grid>
+                                
                                 
                                 <Grid templateColumns="auto 1fr" gap={4}>
                                     <GridItem width="10em">
