@@ -209,6 +209,30 @@ const Page = () => {
                                 />
                             </Heading>
                             <VStack spacing={4} align="stretch" mt={4}>
+                            <Grid templateColumns="auto 1fr" gap={4}>
+                                    <GridItem width="10em">
+                                        <Text
+                                            fontSize="sm"
+                                            fontWeight="bold"
+                                            fontFamily="'Roboto', sans-serif"
+                                            color={useColorModeValue('black', 'white')}
+                                            whiteSpace="nowrap"
+                                        >
+                                            Apr 2025 – Present
+                                        </Text>
+                                    </GridItem>
+                                    <GridItem>
+                                        <Text fontWeight="bold">
+                                        Associate Systematic Fixed Income Trader
+                                        </Text>
+                                        <Text
+                                            fontSize="sm"
+                                            color={useColorModeValue('black', 'white')}
+                                        >
+                                            BlackRock
+                                        </Text>
+                                    </GridItem>
+                                </Grid>
                                 <Grid templateColumns="auto 1fr" gap={4}>
                                     <GridItem width="10em">
                                         <Text
@@ -223,7 +247,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Text fontWeight="bold">
-                                            Platform Operations Intern
+                                            Data Automation Intern
                                         </Text>
                                         <Text
                                             fontSize="sm"
