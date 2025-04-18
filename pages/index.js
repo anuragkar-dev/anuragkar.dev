@@ -223,7 +223,7 @@ const Page = () => {
                                     </GridItem>
                                     <GridItem>
                                         <Text fontWeight="bold">
-                                        Associate Systematic Fixed Income Trader
+                                        Systematic Fixed Income Trader
                                         </Text>
                                         <Text
                                             fontSize="sm"
