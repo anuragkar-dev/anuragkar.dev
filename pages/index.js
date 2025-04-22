@@ -323,7 +323,7 @@ const Page = () => {
                                             color={useColorModeValue('black', 'white')}
                                             whiteSpace="nowrap"
                                         >
-                                            Feb 2023 - Present
+                                            Feb 2023 - Apr 2025
                                         </Text>
                                     </GridItem>
                                     <GridItem>
