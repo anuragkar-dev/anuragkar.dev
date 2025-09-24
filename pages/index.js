@@ -113,7 +113,7 @@ const Page = () => {
                                     <Text transition="color 0.3s ease" color={useColorModeValue('black', 'white')}>
                                         <br />
                                         I&apos;m Anurag Kar, 
-                                        an analyst, with a specialization in
+                                        a trader with a specialization in
                                         Python and Python frameworks.
                                         <br />
                                         <br />
