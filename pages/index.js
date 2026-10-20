@@ -119,7 +119,7 @@ const Page = () => {
                                         <br />
                                         <strong>Looking to hire me? </strong> 
                                         <Link
-                                            href="mailto:anurag@anuragkar.dev"
+                                            href="mailto:anuragkar970@gmail.com"
                                             bgGradient={gradientColors}
                                             bgClip="text"
                                             transition="color 0.3s ease"
@@ -128,7 +128,7 @@ const Page = () => {
                                                 filter: 'brightness(1.25)',
                                             }}
                                         >
-                                            Email me at anurag@anuragkar.dev
+                                            Email me at anuragkar970@gmail.com
                                         </Link>
                                     </Text>
                                 </Box>
